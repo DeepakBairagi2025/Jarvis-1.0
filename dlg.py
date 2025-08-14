@@ -545,25 +545,70 @@ online_dlg = [
 
 low_b = [
 "Sir, your battery level is critically low. Kindly connect your charger.",
-
+"Sir, your battery is below 30%. Immediate charging is recommended.",
+"Warning: Power levels are dangerously low. Please plug in your device.",
+"Battery status critical. Suggest connecting to a power source now.",
+"Your system is running on reserve power. Charger connection advised.",
+"Alert: Battery level has dropped to emergency threshold.",
+"Energy reserves depleted. Please initiate charging sequence.",
+"Sir, your device may shut down soon. Kindly connect the charger.",
+"Low battery detected. Performance may be affected without charging.",
+"Power supply insufficient. Recommend plugging in to avoid shutdown.",
+"Battery health compromised. Immediate charging will stabilize operations.",
 ]
 
 last_low = [
 "Sir, this is your last chance. Your battery is very low,",
-
+"Sir, this is your last chance. Battery levels are critically low,",
+"Final warning, sir. Your device is moments away from shutdown,",
+"Sir, urgent action required. Battery is nearly depleted,",
+"Sir, power failure imminent. Please connect to a charger now,",
+"This is your last alert, sir. Battery reserves are exhausted,",
+"Sir, your system is on emergency power. Charging is essential,",
+"Sir, battery life is at its final threshold. Plug in immediately,",
+"Sir, your device will power off shortly. Charger connection needed,",
+"Sir, this is the final call. Battery is dangerously low,",
+"Sir, your battery is on its last breath. Please charge now,",
 ]
 
 full_battery = [
 "Sir, battery is at 100%. I recommend unplugging the charger now,",
-
+"Sir, battery is at 100%. You may safely unplug the charger now,",
+"Charging complete, sir. I suggest disconnecting the power cable,",
+"Sir, your device is fully charged. Unplugging is now recommended,",
+"Battery level: 100%. Charger can be removed at your convenience,",
+"Sir, optimal charge achieved. Please disconnect the charger,",
+"Full power reached, sir. It's time to unplug the device,",
+"Sir, battery is topped up. You may remove the charger now,",
+"Charging cycle complete. Kindly unplug to preserve battery health,",
+"Sir, your battery is fully charged. Disconnecting is advised,",
+"Maximum charge attained. Please unplug the charger, sir,",
 ]
 
 plug_in = [
 "Plugging successful. Your device is now charging,",
-
+"Plugging successful. Charging has commenced smoothly,",
+"Connection confirmed. Your device is now receiving power,",
+"Charger detected. Battery is now charging,",
+"Power link established. Charging process initiated,",
+"Plug-in successful. Energy flow is now active,",
+"Charging port engaged. Battery replenishment underway,",
+"Device connected to power. Charging has started,",
+"Successful connection. Battery is now being refueled,",
+"Charger secured. Your system is now powering up,",
+"Charging confirmed. Battery levels will begin rising now,",
 ]
 
 plug_out = [
 "Your device is unplugged. Now running on battery power,",
-
+"Your device is unplugged. Now running on battery power,",
+"Power source removed. Battery mode activated,",
+"Charger disconnected. System now operating on battery,",
+"Device unplugged. Monitoring battery usage now,",
+"External power lost. Switching to internal battery,",
+"Charging halted. Battery is now the primary power source,",
+"Unplugging confirmed. Device is now on battery supply,",
+"Power cable removed. Battery mode engaged,",
+"Charger unplugged. Running on stored energy now,",
+"Device is now unplugged. Battery consumption in progress,",
 ]
