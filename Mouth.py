@@ -2,9 +2,10 @@ import asyncio
 import threading
 import time
 import os
+
 from play_file import play_audio
-from remove_file import *
-from make_voice import *
+from remove_file import remove_file
+from make_voice import amain
 
 VOICE = "en-AU-WilliamNeural"
 BuFFER_SIZE = 1024
@@ -27,6 +28,11 @@ def speak(TEXT, output_file=None):
     # Add delay before file removal
     time.sleep(0.5)
     remove_file(output_file)
+
+    # Aslo remove any stray speak.mp3 left by amain/play
+    legacy = os.path.join(os.getcwd(), "speak.mp3")
+    if os.path.isfile(legacy):
+        remove_file(legacy)
 """ 
 speak("and i am, iron, man") """
 
