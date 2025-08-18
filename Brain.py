@@ -21,7 +21,7 @@ def load_qa_data(file_path):
     return qa_dict
 
 
-def save_qa_dict(file_path, qa_dict):
+def save_qa_data(file_path, qa_dict):
     with open(file_path, 'w', encoding='utf-8') as f:
         for q, a in qa_dict.items():
             f.write(f"{q}:{a}\n")
@@ -53,7 +53,7 @@ def wiki_search(prompt):
 
         # Assuming 'search_wikipedia' is definied somewhere
         qa_dict[search_prompt] = wiki_summary # Store in qa-dict
-        save_qa_dict(qa_file_path, qa_dict)  # Save updated qa_dict
+        save_qa_data(qa_file_path, qa_dict)  # Save updated qa_dict
     except wikipedia.exceptions.DisambiguationError as e:
         speak("There is a disambiguation page for the given query. Please provide more specific information.")
         print("There is a disambiguation page for the given query. Please provide more specific information.")
