@@ -25,10 +25,6 @@ def Trans_hindi_to_english(txt):
     english_txt = translate(txt, to_language='en-in')
     return english_txt
 
-def Trans_hindi_to_english(txt):
-    english_txt = translate(txt, to_language='en-in')
-    return english_txt
-
 def listen():
     """Listen for speech input with settings optimized for laptop microphones"""
     recognizer = sr.Recognizer()
@@ -45,7 +41,7 @@ def listen():
     with sr.Microphone() as source:
         print(Fore.YELLOW + "Adjusting for ambient noise... Please wait." + Style.RESET_ALL)
         # Longer adjustment period for better ambient noise calibration
-        recognizer.adjust_for_ambient_noise(source, duration=1.5)
+        recognizer.adjust_for_ambient_noise(source, duration=0.3)
         print(Fore.GREEN + "Listening for your command..." + Style.RESET_ALL)
         
         try:
@@ -116,5 +112,4 @@ def listen():
             return ""
         except Exception as e:
             print(Fore.RED + f"Error: {str(e)}" + Style.RESET_ALL)
-            return ""
- """
+            return "" """
