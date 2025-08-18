@@ -1,18 +1,15 @@
-import random
-import psutil
-import time
+from search_google import search_google
 from Model import mind
 from model2 import get_response
 from wish import wish
 from welcome import welcome
 from open import open
 from close import close
-from Ear import *
-from dlg import *
-from Mouth import speak
+from Ear import * 
 import pyautogui as gui
 import webbrowser
 from battery import *
+from search_wiki import *
 
 def cmd():
     wish()
@@ -40,6 +37,7 @@ def cmd():
             text = text.strip()
             text= mind(text)
             speak(text)
+
         elif text.endswith(("jarvis","buddy","jar")):
             text = text.replace("jarvis", "")
             text = text.replace("vis", "")
@@ -52,6 +50,20 @@ def cmd():
         elif "jarvis" in text or "jar" in text or "jarvis " in text:
             response = get_response(text)
             speak(response)
+
+        elif "search in google" in text or "search on google" in text:
+            text = text.replace("search in google", "")
+            text = text.strip()
+            search_google(text)
+
+        elif text.endswith(("search in google","search on google")):
+            text = text.replace("search in google", "")
+            text = text.strip()
+            search_google(text) 
+
+
+        elif text.startswith(("who is", "what is","what was","who was")):
+            wiki_search(text)
 
         elif text.startswith(("open", "kholo", "show me")):
             text = text.replace("kholo", "")
@@ -345,6 +357,12 @@ def cmd():
         elif "open file explorer" in text or "file explorer" in text:
             speak("Opening File Explorer.")
             gui.hotkey("win", "e")
+
+        elif text in qa_dict:
+            ans = qa_dict[text]
+            speak_thread = threading.Thread(target=speak, args=(ans,))
+            speak_thread.start()
+            speak_thread.join()
 
         else:
             pass
