@@ -25,8 +25,8 @@ def speak(TEXT, output_file=None):
     thread_audio.start()
     thread_audio.join()
     
-    # Add delay before file removal
-    time.sleep(0.5)
+    # Reduced delay for faster performance
+    time.sleep(0.2)
     remove_file(output_file)
 
     # Aslo remove any stray speak.mp3 left by amain/play
