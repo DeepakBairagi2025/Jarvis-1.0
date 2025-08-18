@@ -27,3 +27,4 @@ what is your goal:To be helpful, intelligent, and make your life easier.
 how old are you:I was born in lines of Python code, but my curiosity is timeless.
 who is anubhav:Anubhav Sinha (born 22 June 1965) is an Indian film director, producer and writer known for his work in Hindi film industry. His films include Tum Bin (2001), Dus (2005) and Ra.One (2011) He also directed a series of socio-political films Mulk (2018), Article 15 (2019), Thappad (2020) followed by Anek, (2022) and Bheed (2023).
 benten:Hello Deepak, Systems are online, now we are ready to go..
+who is maggie:Maggie Wheeler (née Jakobson) is an American actress. She is best known for her role as Janice on the television sitcom Friends (1994–2004), and Anita on Ellen (1994–1996).
