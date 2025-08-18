@@ -612,3 +612,16 @@ plug_out = [
 "Charger unplugged. Running on stored energy now,",
 "Device is now unplugged. Battery consumption in progress,",
 ]
+
+search_result = [
+    "This is the search result for your question or query.",
+"Here are the results based on your query.",
+"This is what I found in response to your question.",
+"Search complete. These are the relevant results.",
+"Based on your input, here’s what turned up.",
+"Here’s what the search revealed for your query.",
+"These are the findings related to your question.",
+"Your query returned the following results.",
+"This is the outcome of your search request.",
+"Here are the top matches for your question."
+]
