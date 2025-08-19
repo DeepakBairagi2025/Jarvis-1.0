@@ -625,3 +625,63 @@ search_result = [
 "This is the outcome of your search request.",
 "Here are the top matches for your question."
 ]
+yt_search = [
+"Searching your query on YouTube",
+"Looking up your request on YouTube",
+"Initiating YouTube search for your query",
+"Fetching results from YouTube based on your input",
+"Exploring YouTube for relevant content",
+"Running a YouTube search for your question",
+"Checking YouTube for matching videos",
+"Scanning YouTube for your requested topic",
+"Query sent to YouTube for results",
+"Retrieving YouTube content related to your query",
+]
+s1 = [
+"Now searching..",
+"Searching now..",
+"Initiating search..",
+"Looking it up..",
+"Scanning for results..",
+"Fetching data..",
+"Running your query..",
+"Exploring sources..",
+"Digging into it..",
+"Retrieving info..",
+]
+s2 = [
+"Sir results should be there in your screen",
+"The results should now be visible on your screen",
+"You should be seeing the results on your screen",
+"Sir the output should be displayed on your screen",
+"Results must be appearing on your screen now",
+"Your screen should show the results by now",
+"Sir kindly check your screen for the results",
+"The requested data should be on your screen",
+"Screen should now reflect the results",
+"Sir please verify the results on your screen",
+]
+playsong = [
+"Playing music on YouTube",
+"Streaming your selected track on YouTube",
+"Launching music playback via YouTube",
+"Now playing your requested song on YouTube",
+"Initiating music stream on YouTube",
+"Your music is now live on YouTube",
+"Starting audio playback through YouTube",
+"Music is now being played from YouTube",
+"Activating YouTube music stream",
+"Your chosen track is now playing on YouTube",
+]
+q = [
+"Sir, shall I queue up your preferred track?",
+"Awaiting your musical selection, Deepak.",
+"Which melody shall I initiate for you?",
+"Would you care to name a song, or shall I surprise you?",
+"Your playlist awaits—what shall I play first?",
+"Ready when you are. Just say the name of the track.",
+"Which composition suits your current mood?",
+"Shall I engage the speakers with something familiar or new?",
+"Your auditory indulgence is moments away—just name it.",
+"Standing by for your musical command, sir.",
+]

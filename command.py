@@ -7,7 +7,7 @@ from open import open
 from close import close
 from Ear import * 
 import pyautogui as gui
-import webbrowser
+from Youtube import *
 from battery import *
 from search_wiki import *
 
@@ -53,17 +53,36 @@ def cmd():
 
         elif "search in google" in text or "search on google" in text:
             text = text.replace("search in google", "")
+            text = text.replace("search on google", "")
             text = text.strip()
             search_google(text)
 
         elif text.endswith(("search in google","search on google")):
             text = text.replace("search in google", "")
+            text = text.replace("search on google", "")
             text = text.strip()
             search_google(text) 
 
+        elif "search in youtube" in text or "search on youtube" in text:
+            text = text.replace("search in youtube", "")
+            text = text.replace("search on youtube", "")
+            text = text.strip()
+            youtube_search(text)
+
+        elif text.endswith(("search in youtube","search on youtube")):
+            text = text.replace("search in youtube", "")
+            text = text.replace("search on youtube", "")
+            text = text.strip()
+            youtube_search(text) 
 
         elif text.startswith(("who is", "what is","what was","who was")):
             wiki_search(text)
+
+        elif "play music on youtube" in text or "gana bajao youtube per" in text:
+            a = random.choice(q)
+            speak(a)
+            text = listen().lower()
+            play_music_on_youtube(text)
 
         elif text.startswith(("open", "kholo", "show me")):
             text = text.replace("kholo", "")
@@ -82,7 +101,7 @@ def cmd():
         elif text in close_input:
             close()
 
-        elif "check battery persent" in text or "check battery persentage" in text or "battery kitni hai" in text:
+        elif "check battery percent" in text or "check battery percentage" in text or "battery kitni hai" in text:
             battery_persentage()
 
         elif "write" in text or "likho" in text or "right" in text:
