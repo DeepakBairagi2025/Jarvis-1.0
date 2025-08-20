@@ -10,6 +10,7 @@ import pyautogui as gui
 from Youtube import *
 from battery import *
 from search_wiki import *
+from speed_test import *
 
 def cmd():
     wish()
@@ -35,8 +36,7 @@ def cmd():
             text = text.replace("buddy", "")
             text = text.replace("jar", "")
             text = text.strip()
-            text= mind(text)
-            speak(text)
+            mind(text)
 
         elif text.endswith(("jarvis","buddy","jar")):
             text = text.replace("jarvis", "")
@@ -44,8 +44,7 @@ def cmd():
             text = text.replace("buddy", "")
             text = text.replace("jar", "")
             text = text.strip()
-            text= mind(text)
-            speak(text)
+            mind(text)
 
         elif "jarvis" in text or "jar" in text or "jarvis " in text:
             response = get_response(text)
@@ -382,6 +381,9 @@ def cmd():
             speak_thread = threading.Thread(target=speak, args=(ans,))
             speak_thread.start()
             speak_thread.join()
+
+        elif "check internet speed" in text or "internet speed check karo" in text:
+            check_internet_speed()
 
         else:
             pass

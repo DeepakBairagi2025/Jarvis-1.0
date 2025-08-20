@@ -5,8 +5,8 @@ from Fspeak import fspeak
 from random_advice import get_random_advice
 from command import cmd
 from battery import *
+ 
 
-    
 def advice():
     while True:
         x = [600, 550, 580, 400, 3000, 800, 700, 8200, 8000, 50, 568]

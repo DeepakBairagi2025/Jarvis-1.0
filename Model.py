@@ -58,7 +58,7 @@ def mind(text):
     vectorizer, X = train_tfidf_vectorizer(dataset)
     user_question = text
     answer = get_answer(user_question, vectorizer, X, dataset)
-    return answer
+    speak(answer)
 
 # Loop
 """ if __name__ == "__main__":
